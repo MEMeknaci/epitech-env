@@ -2,13 +2,18 @@
 
 function env_install()
 {
-    echo "salut"
     git clone https://github.com/Epitech/epitest-docker.git
-    cd epitest-docker
+    mv epitest-docker .epitest-docker
+    cd .epitest-docker
     echo "configuration of docker.."
-    sudo groupadd docker
-    sudo usermod -aG docker $(whoami)
-    sudo service docker start
+    #systemctl enable docker
+    sudo systemctl start docker
+    #OPTIONS='--selinux-enabled -G dockerroot'
+    #systemctl restart docker
+    #sudo groupadd docker
+    #sudo usermod -aG docker $(whoami)
+    #sudo service docker start
+    #sudo chmod 777 /var/run/docker.sock
     echo "starting update and download..."
     ./build.sh --tag latest -n
 }
