@@ -1,5 +1,4 @@
 # epitech-env
-An Epitech environnement for your projects.
 This is the moulinette's environnment with more features under Fedora.
 
 ## Requirements
