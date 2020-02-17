@@ -2,4 +2,4 @@
 A Epitech environnement for your projects.
 
 ## Getting started
-* oui
+* Install https://www.docker.com/ > Docker
