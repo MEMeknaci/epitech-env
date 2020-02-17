@@ -1,5 +1,6 @@
 # epitech-env
 A Epitech environnement for your projects.
 
-## Getting started
+## Requirements
 * Install <a href="https://www.docker.com">Docker </a>
+## lol
