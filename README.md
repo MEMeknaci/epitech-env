@@ -2,4 +2,4 @@
 A Epitech environnement for your projects.
 
 ## Getting started
-* Install href="https://www.docker.com">Website
+* Install <li><a href="https://www.docker.com">Website </a></li>
