@@ -1,6 +1,6 @@
 # epitech-env
-A Epitech environnement for your projects.
-<li>This environnment of the moulinette with more features under Fedora.</li>
+An Epitech environnement for your projects.
+This is an environnment of the moulinette with more features under Fedora.
 
 ## Requirements
 * Install <a href="https://www.docker.com">Docker </a>
