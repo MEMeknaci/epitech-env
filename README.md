@@ -1,4 +1,5 @@
 # epitech-env
-The Epitech environnement for your projects.
+A Epitech environnement for your projects.
 
-## lol
+## Getting started
+* oui
