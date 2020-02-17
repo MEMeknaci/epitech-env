@@ -5,6 +5,10 @@ function env_install()
     echo "salut"
     git clone https://github.com/Epitech/epitest-docker.git
     cd epitest-docker
+    echo "configuration of docker.."
+    sudo groupadd docker
+    sudo usermod -aG docker $(whoami)
+    sudo service docker start
     echo "starting update and download..."
     ./build.sh --tag latest -n
 }
