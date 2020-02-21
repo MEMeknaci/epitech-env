@@ -10,7 +10,7 @@ function display_ft()
 echo "DOWNLOAD EPITECH ENVIRONMENT UNDER FEDORA WITH
 ##  GIT"
 sleep 0.1
-echo -e "\033[31m##  BLIH"
+echo "##  BLIH"
 sleep 0.1
 echo "##  VALGRIND"
 sleep 0.1
