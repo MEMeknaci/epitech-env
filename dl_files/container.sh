@@ -26,7 +26,7 @@ function container()
     echo "starting update and download..."
     #./build.sh --tag latest -n
     docker pull epitechcontent/epitest-docker
-    docker run --name fedora -i -d -v ~/.ssh:/root/.ssh -v /home/mmeknaci/delivery:/root/current -w /root epitechcontent/epitest-docker:latest
+    docker run --name fedora -i -d -v ~/.ssh:/root/.ssh -v $HOME:/root/current -w /root epitechcontent/epitest-docker:latest
     echo "moving docker starting scripts.."
     scripts
     sleep 0.5
