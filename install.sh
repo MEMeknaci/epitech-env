@@ -11,7 +11,6 @@ echo "-------------------------------"
 sleep 1
 if [ $CHECK == "True" ]; then
     display_ft
-    sleep 5
     read -p "Are you sure to download this container [Y/N] " -r choice
     if [[ $choice =~ ^[Yy]$ ]]; then
         installation

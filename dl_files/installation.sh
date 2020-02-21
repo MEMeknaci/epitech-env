@@ -6,5 +6,5 @@ source dl_files/features.sh
 function installation()
 {
     container
-    features
+    #features
 }
