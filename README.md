@@ -1,5 +1,5 @@
 # epitech-env
-This is the moulinette's environnment with more features under Fedora.
+This is a docker epitech container with more features under Fedora.
 
 ## Requirements
 * Install <a href="https://www.docker.com">Docker </a>
