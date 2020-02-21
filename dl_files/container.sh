@@ -2,7 +2,8 @@
 
 function scripts()
 {
-    ./assets/scripts/start_fedora.sh
+    docker start fedora
+    docker exec -it fedora /bin/zsh
     git clone https://github.com/MEMeknaci/epitech-env.git
     mv epitech-env/assets/scripts/start_fedora.sh usr/local/bin
     mv epitech-env/assets/scripts/quit_fedora.sh usr/local/bin
@@ -10,10 +11,6 @@ function scripts()
 
 function container()
 {
-    echo "moving docker starting scripts.."
-    scripts
-    sleep 0.5
-    echo "Done !"
     #git clone https://github.com/Epitech/epitest-docker.git
     #mv epitest-docker .epitest-docker
     #cd .epitest-docker
@@ -30,6 +27,10 @@ function container()
     #./build.sh --tag latest -n
     docker pull epitechcontent/epitest-docker
     docker run --name fedora -i -d -v ~/.ssh:/root/.ssh -v /home/mmeknaci/delivery:/root/current -w /root epitechcontent/epitest-docker:latest
+    echo "moving docker starting scripts.."
+    scripts
+    sleep 0.5
+    echo "Done !"
     echo ""
     echo "Epitech Docker Packages are installed !"
 }
