@@ -14,9 +14,11 @@ $ sudo ./ubuntu/install_ubuntu.sh
 ```
 
 3. If you are using MacOS
+
+Please Download the official Docker Desktop app : <a href="https://download.docker.com/mac/stable/Docker.dmg">Docker </a>
+
 ```
-$ 1. Please Download the official Docker Desktop app : <a href="https://download.docker.com/mac/stable/Docker.dmg">Docker </a>
-$ 2. sudo ./macos/install_macos.sh
+$ sudo ./macos/install_macos.sh
 ```
 
 ## How to run the container ?
