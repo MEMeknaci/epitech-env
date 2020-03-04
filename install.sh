@@ -3,6 +3,11 @@
 source dl_files/display_ft.sh
 source dl_files/installation.sh
 
+if [[ $EUID -ne 0 ]]; then
+    echo "This script must be run as root (type sudo ./install.sh)" 
+   exit 1
+fi
+
 CHECK="False"
 echo ""
 echo "ping test..."

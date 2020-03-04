@@ -10,19 +10,19 @@ function scripts()
 # CONTAINER CONFIG AND INSTALLATION #
 function container()
 {
-    echo "configuration of docker.."
+    echo -e "\e[31mconfiguration of docker..\e[37m"
     sudo systemctl start docker
     sudo groupadd docker
     sudo usermod -aG docker $(whoami)
     sudo service docker start
     sudo chmod 777 /var/run/docker.sock
-    echo "starting update and download..."
+    echo -e "\e[31mstarting update and download...\e[37m"
     docker pull epitechcontent/epitest-docker
-    echo "moving docker starting scripts.."
+    echo -e "\e[31mmoving docker starting scripts..\e[37m"
     scripts
     sleep 0.5
-    echo "Done !"
+    echo -e "\e[31mDone !\e[37m"
     docker run --name fedora -i -d -v ~/.ssh:/root/.ssh -v $HOME:/root/current -w /root epitechcontent/epitest-docker:latest
     echo ""
-    echo "Epitech Docker Packages are installed !"
+    echo -e "\e[31mEpitech Docker Packages are installed !\e[37m"
 }
