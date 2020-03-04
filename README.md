@@ -1,14 +1,32 @@
 # epitech-env
 This is a docker epitech container with more features under Fedora.
+It will download and configure Docker in a way that will let you have a container running the same way as the "Moulinette" does.
 
-## Requirements
-* Install <a href="https://www.docker.com">Docker </a>
 ## How to install it ?
-1. Launch this command
+1. If you are using Fedora
 ```
-$ ./install.sh
+$ sudo ./fedora/install.sh
 ```
+
+2. If you are using Ubuntu
+```
+$ sudo ./ubuntu/install_ubuntu.sh
+```
+
+3. If you are using MacOS
+
+Please Download the official Docker Desktop app : <a href="https://download.docker.com/mac/stable/Docker.dmg">Docker </a>
+
+```
+$ sudo ./macos/install_macos.sh
+```
+
 ## How to run the container ?
+
+* Launch this only once to create the container
+```
+$ create_fedora
+```
 * Launch this command every time you want to launch the container
 ```
 $ start_fedora
