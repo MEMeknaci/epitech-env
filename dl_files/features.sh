@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# INSTALLATION OF CONTAINERS FEATURES #
 function features()
 {
     echo ""

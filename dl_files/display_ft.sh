@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# DISPLAY CONTAINERS FEATURES #
 function display_ft()
 {
     echo "
