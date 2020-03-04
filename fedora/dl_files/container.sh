@@ -21,8 +21,8 @@ function container()
     echo -e "\e[31mmoving docker starting scripts..\e[37m"
     scripts
     sleep 0.5
-    echo -e "\e[31mDone !\e[37m"
-    docker run --name fedora -i -d -v ~/.ssh:/root/.ssh -v $HOME:/root/current -w /root epitechcontent/epitest-docker:latest
+    echo -e "\e[31mcontainer initialization..\e[37m"
+    ./assets/init_fedora.sh
     echo ""
     echo -e "\e[31mEpitech Docker Packages are installed !\e[37m"
 }
