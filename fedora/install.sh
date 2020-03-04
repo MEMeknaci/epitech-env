@@ -9,15 +9,17 @@ if [[ $EUID -ne 0 ]]; then
 fi
 
 CHECK="False"
-echo ""
-echo "ping test..."
-ping -w0.3 -c1 google.com &>/dev/null && ping -c 4 8.8.8.8 && CHECK="True" || CHECK="False"
+
+echo -e "\nping test..."
+ping -w0.3 -c1 google.com &>/dev/null && ping -c 3 8.8.8.8 && CHECK="True" || CHECK="False"
 echo "-------------------------------"
 sleep 1
+
 echo -e "\e[31mInstalling docker ...\e[37m"
 dnf install docker -y
 echo -e "\e[31mInstalling expect scripts ...\e[37m"
 dnf install expect -y
+
 if [ $CHECK == "True" ]; then
     read -p "Are you sure to download this container [Y/N] " -r choice
     if [[ $choice =~ ^[Yy]$ ]]; then
