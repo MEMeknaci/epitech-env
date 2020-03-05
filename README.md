@@ -25,7 +25,7 @@ $ sudo ./install_macos.sh
 
 * Launch this only once to create the container
 ```
-$ sudo HOME=$HOME init_fedora
+$ sudo HOME=$HOME ./init_fedora
 ```
 * Launch this command every time you want to launch the container
 ```
