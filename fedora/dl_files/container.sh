@@ -3,8 +3,8 @@
 # START AND QUIT CONTAINER SCRIPTS #
 function scripts()
 {
-    sudo cp assets/scripts/start_fedora.sh /usr/local/bin
-    sudo cp assets/scripts/quit_fedora.sh /usr/local/bin
+    sudo cp assets/scripts/start_epienv.sh /usr/local/bin
+    sudo cp assets/scripts/quit_epienv.sh /usr/local/bin
 }
 
 # CONTAINER CONFIG AND INSTALLATION #
@@ -24,5 +24,5 @@ function container()
     scripts
     sleep 0.5
 
-    echo -e "\n\e[31mEpitech Docker Packages are installed !\e[37m"
+    echo -e "\n\e[32mEpitech Docker Packages are installed !\e[37m"
 }
