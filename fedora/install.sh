@@ -21,14 +21,14 @@ echo -e "\e[31mInstalling expect scripts ...\e[37m"
 dnf install expect -y
 
 if [ $CHECK == "True" ]; then
-    read -p "Are you sure to download this container [Y/N] " -r choice
-    if [[ $choice =~ ^[Yy]$ ]]; then
-        installation
-    elif [[ $choice =~ ^[nN]$ ]]; then
-        echo "cancelling program.. exit"
-    else
-        echo "wrong answer.. exit"
-    fi
+    #read -p "Are you sure to download this container [Y/N] " -r choice
+    #if [[ $choice =~ ^[Yy]$ ]]; then
+    installation
+    #elif [[ $choice =~ ^[nN]$ ]]; then
+        #echo "cancelling program.. exit"
+    #else
+        #echo "wrong answer.. exit"
+    #fi
 else
     echo "Retry when you have connection.."
 fi
