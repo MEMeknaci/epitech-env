@@ -11,11 +11,10 @@ function scripts()
 function container()
 {
     echo -e "\e[31mconfiguration of docker ...\e[37m"
-    sudo systemctl start docker
+    sudo systemctl enable docker
     sudo groupadd docker
     sudo usermod -aG docker $(whoami)
     sudo service docker start
-    sudo chmod 777 /var/run/docker.sock
  
     echo -e "\e[31mstarting update and download ...\e[37m"
     docker pull epitechcontent/epitest-docker
