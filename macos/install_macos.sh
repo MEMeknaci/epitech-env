@@ -4,7 +4,6 @@ function scripts()
 {
      sudo cp assets/scripts/start_fedora.sh /usr/local/bin
      sudo cp assets/scripts/quit_fedora.sh /usr/local/bin
-     sudo cp assets/scripts/create_fedora.sh /usr/local/bin
 }
 
 if [[ $EUID -ne 0 ]]; then
@@ -12,7 +11,11 @@ if [[ $EUID -ne 0 ]]; then
    exit 1
 fi
 
+echo -e "\e[31mstarting update and download...\e[37m"
 docker pull epitechcontent/epitest-docker
 
-echo "Creating Aliases ..."
+echo -e "\e[31mmoving docker starting scripts..\e[37m"
 scripts
+sleep 0.5
+
+echo -e "\n\e[31mEpitech Docker Packages are installed !\e[37m"

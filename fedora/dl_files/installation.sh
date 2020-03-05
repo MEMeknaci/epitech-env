@@ -6,6 +6,6 @@ source dl_files/features.sh
 # CONTAINER INSTALLATION #
 function installation()
 {
-    container
+    container $1
     #features
 }

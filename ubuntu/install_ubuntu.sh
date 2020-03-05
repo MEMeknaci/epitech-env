@@ -39,7 +39,4 @@ echo -e "\e[31mmoving docker starting scripts..\e[37m"
 scripts
 sleep 0.5
 
-echo -e "\e[31mcontainer initialization..\e[37m"
-./assets/init_fedora.exp $HOME
-
 echo -e "\n\e[31mEpitech Docker Packages are installed !\e[37m"

@@ -11,10 +11,11 @@ if {$force_conservative} {
 }
 
 set timeout -1
-set home_var [lindex $argv 0];
-puts $home_var
-spawn docker run --name fedora -i -d -v ~/.ssh:/root/.ssh -v $home_var:/root/current -w /root epitechcontent/epitest-docker:latest
+puts "\033\[01;31mcontainer initialization ...\033\[0;37m"
+spawn docker run --name fedora -i -d -v ~/.ssh:/root/.ssh -v $::env(HOME):/root/current -w /root epitechcontent/epitest-docker:latest
 match_max 100000
 sleep 0.8
 send -- "exit\r"
+sleep 0.4
 expect eof
+puts "\033\[0;32mDone !\033\[0;37m"
