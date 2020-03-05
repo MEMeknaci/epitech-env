@@ -5,7 +5,7 @@ It will download and configure Docker in a way that will let you have a containe
 ## How to install it ?
 1. If you are using Fedora, go to fedora folder :
 ```
-$ sudo ./install.sh
+$ sudo ./install_fedora.sh
 ```
 
 2. If you are using Ubuntu, go to ubuntu folder :
@@ -25,13 +25,13 @@ $ sudo ./install_macos.sh
 
 * Launch this only once to create the container
 ```
-$ sudo HOME=$HOME ./init_fedora
+$ sudo HOME=$HOME ./init_epienv
 ```
 * Launch this command every time you want to launch the container
 ```
-$ start_fedora
+$ start_epienv
 ```
 * If you want to stop the program for the day or more, launch this command
 ```
-$ quit_fedora
+$ quit_epienv
 ```
