@@ -25,8 +25,6 @@ sudo add-apt-repository \
    stable"
 sudo apt-get update -y
 sudo apt-get install docker-ce docker-ce-cli containerd.io -y
-echo -e "\e[31mInstalling expect scripts ...\e[37m"
-sudo apt-get install -y expect
 
 echo -e "\e[31mconfiguration of docker ...\e[37m"
 systemctl enable docker

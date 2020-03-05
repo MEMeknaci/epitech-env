@@ -1,21 +1,5 @@
-#!/usr/bin/expect -f
+#!/bin/bash
 
-set force_conservative 0  ;# set to 1 to force conservative mode even if
-			  ;# script wasn't run conservatively originally
-if {$force_conservative} {
-	set send_slow {1 .1}
-	proc send {ignore arg} {
-		sleep .1
-		exp_send -s -- $arg
-	}
-}
-
-set timeout -1
-puts "\033\[01;31mcontainer initialization ...\033\[0;37m"
-spawn sudo docker run --name fedora -i -d -v ~/.ssh:/root/.ssh -v $::env(HOME):/root/current -w /root epitechcontent/epitest-docker:latest
-match_max 100000
-sleep 0.8
-send -- "exit\r"
-sleep 0.4
-expect eof
-puts "\033\[0;32mDone !\033\[0;37m"
+echo -e "\e[31mcontainer initialization ...\e[37m"
+sudo docker run --name fedora -i -d -v ~/.ssh:/root/.ssh -v $HOME:/root/current -w /root epitechcontent/epitest-docker:latest
+echo -e "\e[32mDone !\e[37m"

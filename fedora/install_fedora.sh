@@ -17,8 +17,6 @@ sleep 1
 
 echo -e "\e[31mInstalling docker ...\e[37m"
 dnf install docker -y
-echo -e "\e[31mInstalling expect scripts ...\e[37m"
-dnf install expect -y
 
 if [ $CHECK == "True" ]; then
     #read -p "Are you sure to download this container [Y/N] " -r choice
