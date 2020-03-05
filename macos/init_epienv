@@ -1,5 +1,5 @@
 #!/bin/bash
 
 echo -e "\e[31mcontainer initialization ...\e[37m"
-docker run --name fedora -i -d -v ~/.ssh:/root/.ssh -v $HOME:/root/current -w /root epitechcontent/epitest-docker:latest
+sudo docker run --name fedora -i -d -v ~/.ssh:/root/.ssh -v $HOME:/root/current -w /root epitechcontent/epitest-docker:latest
 echo -e "\e[32mDone !\e[37m"
