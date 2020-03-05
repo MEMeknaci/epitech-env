@@ -23,7 +23,7 @@ $ sudo ./install_macos.sh
 
 ## How to run the container ?
 
-* Launch this only once to create the container
+* Launch this only once to create the container (Once lanched exit it)
 ```
 $ sudo HOME=$HOME ./init_epienv
 ```
