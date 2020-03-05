@@ -30,6 +30,8 @@ sudo apt-get install -y expect
 
 echo -e "\e[31mconfiguration of docker ...\e[37m"
 systemctl enable docker
+sudo groupadd docker
+sudo usermod -aG docker $(whoami)
 systemctl start docker
 
 echo -e "\e[31mstarting update and download...\e[37m"
