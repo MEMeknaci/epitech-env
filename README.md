@@ -5,7 +5,7 @@ It will download and configure Docker in a way that will let you have a containe
 ## How to install it ?
 1. If you are using Fedora, go to fedora folder :
 ```
-$ sudo .install.sh
+$ sudo ./install.sh
 ```
 
 2. If you are using Ubuntu, go to ubuntu folder :
