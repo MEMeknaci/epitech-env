@@ -3,8 +3,8 @@
 # START AND QUIT CONTAINER SCRIPTS #
 function scripts()
 {
-    sudo cp assets/scripts/start_epienv.sh /usr/local/bin
-    sudo cp assets/scripts/quit_epienv.sh /usr/local/bin
+    sudo cp assets/scripts/start_epienv /usr/local/bin
+    sudo cp assets/scripts/quit_epienv /usr/local/bin
 }
 
 # CONTAINER CONFIG AND INSTALLATION #
