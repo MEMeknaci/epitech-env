@@ -15,6 +15,7 @@ function container()
     sudo groupadd docker
     sudo usermod -aG docker $(whoami)
     sudo service docker start
+    chmod 777 /var/run/docker.sock
  
     echo -e "\e[31mstarting update and download ...\e[37m"
     docker pull epitechcontent/epitest-docker

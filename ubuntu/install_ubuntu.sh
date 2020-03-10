@@ -27,10 +27,11 @@ sudo apt-get update -y
 sudo apt-get install docker-ce docker-ce-cli containerd.io -y
 
 echo -e "\e[31mconfiguration of docker ...\e[37m"
-systemctl enable docker
+sudo systemctl enable docker
 sudo groupadd docker
 sudo usermod -aG docker $(whoami)
-systemctl start docker
+sudo service docker start
+chmod 777 /var/run/docker.sock
 
 echo -e "\e[31mstarting update and download...\e[37m"
 docker pull epitechcontent/epitest-docker
