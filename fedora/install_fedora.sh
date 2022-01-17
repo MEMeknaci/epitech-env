@@ -8,12 +8,7 @@ if [[ $EUID -ne 0 ]]; then
     exit 1
 fi
 
-CHECK="False"
-
-echo -e "\nping test..."
-ping -w0.3 -c1 google.com &>/dev/null && ping -c 3 8.8.8.8 && CHECK="True" || CHECK="False"
-echo "-------------------------------"
-sleep 1
+CHECK="True"
 
 echo -e "\e[31mInstalling docker ...\e[37m"
 dnf install docker -y
@@ -27,6 +22,4 @@ if [ $CHECK == "True" ]; then
     #else
         #echo "wrong answer.. exit"
     #fi
-else
-    echo "Retry when you have connection.."
 fi
